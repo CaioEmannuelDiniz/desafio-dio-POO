@@ -34,5 +34,4 @@ Foi usado o Git para o controle de versionamento
 
 
 ---
-⌨️ por [Caio Emannuel](https://github.com/CaioEmannuelDiniz) 
-```
+⌨️ por [Caio Emannuel](https://github.com/CaioEmannuelDiniz)
