@@ -1,4 +1,3 @@
-```markdown
 # Projeto Dio de POO 
 
 Esse projeto tem com intuito reforçar alguns conceito de orientação a objeto em java
