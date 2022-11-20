@@ -2,29 +2,22 @@ package com.dio.desafio.POO;
 
 import java.time.LocalDate;
 
-public class Mentoria {
-   private String titulo;
-   private String descricao;
+public class Mentoria extends Conteudo {
+
    private LocalDate data;
 
-   //CONSTRUTORS
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO + 20d;
+    }
 
+   //CONSTRUTORS
     public Mentoria() {
     }
 
     public Mentoria(String titulo, String descricao, LocalDate data) {
-        this.titulo = titulo;
-        this.descricao = descricao;
+        super(titulo, descricao);
         this.data = data;
-    }
-
-    //SETES
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public void setData(LocalDate data) {
@@ -32,14 +25,6 @@ public class Mentoria {
     }
 
     //GETS
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
     public LocalDate getData() {
         return data;
     }
@@ -47,9 +32,11 @@ public class Mentoria {
     @Override
     public String toString() {
         return "Mentoria{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
                 ", data=" + data +
                 '}';
     }
+
+
 }
